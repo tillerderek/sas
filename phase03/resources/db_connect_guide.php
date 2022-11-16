@@ -4,7 +4,7 @@
 // of database interaction using PHP.
 
 // Credentials
-$dbhost = 'localhost';
+$dbhost = 'db';
 $dbuser = 'sally';
 $dbpass = 'somePa55word';
 $dbname = 'salamanders';
