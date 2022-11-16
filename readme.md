@@ -1,6 +1,6 @@
-#wow what a ride
+#wow what a ride#
 
-##how it works **for now**
+##how it works **for now**##
 
 1. change docker-compose file to match the volume you want to link container volumes to
 
@@ -17,7 +17,7 @@ Then you can check if its istalled at localhost/phpinfo or ip/phpinfo.
 4. Setup ur db with localhost:8001 and remote ip:8001
 through phpmyadmin
 
-##That's it should work 
+##That's it should work##
 **respect to all the homies whose stuff i stole from all over the world wide web. you know who u are :pray: :pray: :pray:
 
 
