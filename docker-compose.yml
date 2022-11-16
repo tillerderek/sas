@@ -5,7 +5,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: yes
     volumes:
-      - "./db:/docker-entrypoint-initdb.d"
+      - "/sites/db:/docker-entrypoint-initdb.d"
     ports:
       - 3306:3306
     networks:
@@ -15,7 +15,7 @@ services:
       - db
     image: php:8.1-apache
     volumes:
-      - "./:/var/www/html"
+      - "/sites:/var/www/html"
     ports:
       - 80:80
       - 443:443
@@ -38,4 +38,10 @@ networks:
 
 
 
-    # this has voulme mapping changed for copy paste into portainer to manage the stack
+    # this has voulme mapping changed for copy paste into portainer to manage the stack with site files at root level in sites dir
+
+    # change to windows dir for local dev env
+
+    # change to ./ if building containers from terminal / editor (will build env in working dir) BUT... no portainer access
+
+    #ALL setup with phpmyadmin root no password on the "db" database
