@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:latest
     environment:
-      MYSQL_ROOT_PASSWORD: 90JWNKLjklNMFED9jjiow87-2hfg!;dfs*@
+      MYSQL_ROOT_PASSWORD: redacted find in local cp
     volumes:
       - "/sites/db:/docker-entrypoint-initdb.d"
     ports:
