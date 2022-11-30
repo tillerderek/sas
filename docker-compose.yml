@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:latest
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_ROOT_PASSWORD: 90JWNKLjklNMFED9jjiow87-2hfg!;dfs*@
     volumes:
       - "/sites/db:/docker-entrypoint-initdb.d"
     ports:
