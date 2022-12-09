@@ -13,15 +13,15 @@ if (is_post_request()) {
   $salamander['habitat'] = $_POST['habitat'] ?? '';
   $salamander['description'] = $_POST['description'] ?? '';
 
-  update_salamander($salamander);
-  if ($result === true) {
+  $salamander = update_salamander($salamander);
+  if ($salamander === true) {
     redirect_to(url_for('salamanders/show.php?id=' . $id));
   } else {
     $errors = $salamander;
+    $salamander = find_salamander_by_id($id);
   }
-} else {
-  $salamander = find_salamander_by_id($id);
 }
+
 ?>
 
 <?php echo display_errors($errors); ?>
