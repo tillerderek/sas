@@ -6,6 +6,7 @@ include(SHARED_PATH . '/salamander-header.php');
 $id = $_GET['id'] ?? '1'; 
 $salamander = find_salamander_by_id($id);
 
+
 ?>
 
 
