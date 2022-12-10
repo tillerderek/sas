@@ -7,7 +7,7 @@ $salamander = find_salamander_by_id($id);
 ?>
 
 <?php
-
+// included if statement to validate db_escape is actually working instead of getting warning message or getting annoying as hell null array message that had me confused for like 2 hours
 if ($salamander === NULL) {
 
 ?>
